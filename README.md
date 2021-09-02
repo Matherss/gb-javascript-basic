@@ -1,1 +1,1 @@
-#gb-javascript-basic
+Домашние задания по курсу JavaScript Базовый курс

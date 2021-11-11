@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+.wrapp {
+  width: 256px;
+  height: 256px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  outline: 1px solid #ddd;
+  margin: 30px auto;
+}
+.cell {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+.white {
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+  transform: rotate(-180deg);
+}
+.black {
+  color: #000;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.leftNumbers,
+.rightNumbers {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.leftNumbers div {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightNumbers div {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(180deg);
+}
+.leftNumbers {
+  left: -20px;
+}
+.rightNumbers {
+  right: -20px;
+}
+
+.topLetter,
+.bottomLetter {
+  display: flex;
+  position: absolute;
+}
+.bottomLetter div {
+  width: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.topLetter div {
+  width: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(180deg);
+}
+.bottomLetter {
+  bottom: -20px;
+}
+.topLetter {
+  top: -20px;
+}

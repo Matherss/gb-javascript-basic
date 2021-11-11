@@ -1,0 +1,16 @@
+<script>
+  var inputNumber = +prompt("Введите число от 0 до 999");
+  var massFromNumber = {};
+
+  if (inputNumber > 0 && inputNumber <= 999) {
+    alert("Вы ввели подходящее число");
+
+    massFromNumber.hundreds = Math.floor(inputNumber / 100);
+    massFromNumber.tens = Math.floor((inputNumber / 10) % 10);
+    massFromNumber.units = Math.floor(inputNumber % 10);
+  } else {
+    alert("Вы ввели число вне диапазона от 0 до 999");
+  }
+
+  console.log(massFromNumber);
+</script>
